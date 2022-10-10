@@ -1,6 +1,6 @@
 # Librería MDD. Parser md to html
 
-MDD es una librería que transcribe un documento MD a un documento HTML. El objetivo del proyecto es facilitar la producción de páginas web estáticas y que los escritores puedan enfocar su tiempo en la producción de los textos. 
+MDD es una librería que transcribe un documento MD a un documento HTML. El objetivo del proyecto es facilitar la producción de páginas web estáticas y que los escritores enfoquen su tiempo en la producción de textos. 
 
 ![Librería MDD](images/mdd.svg)
 
@@ -12,7 +12,11 @@ MDD se basa en la librería [Marked](https://github.com/markedjs/marked) creada 
 
 ## Uso 
 
+### Uso 1 
+
 Para transformar un documento .md a un documento .html usar usar nuestro [parser en línea](/demo/mdd.html). 
+
+### Uso 2
 
 Para agregar la librería a tu página web usar nuestra librería javascript [mdd.min.js](/dist/mdd.min.js). Para llamar a la librería usa el siguiente código donde *markdown* es una variable string de la fuente a traducir. 
 
@@ -20,6 +24,8 @@ Para agregar la librería a tu página web usar nuestra librería javascript [md
 mdd.transform(markdown, 'html')
 
 ```
+
+### Uso 3
 
 Para correr la librería en tu computadora es necesario tener instalado node.js y usar el siguiente comando:
 
