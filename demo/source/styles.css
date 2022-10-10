@@ -1,0 +1,229 @@
+/************************/
+/******** FONTS  ********/
+/************************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,100;200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+/************************/
+/******** BASICS ********/
+/************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html{font-size:22px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html{font-size:22px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html{font-size:22px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html{font-size:21px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html{font-size:21px;}
+}
+
+
+body {
+  font-family: 'Roboto slab',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 310;
+  font-size: 1rem;
+  line-height: 1.65rem;
+  margin:0;
+}
+
+a {
+  font-weight: 500;
+  color:chocolate;
+}
+
+
+p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+form{
+    text-align: center;
+}
+
+ins{
+    background-color: "9acdff" !important;
+    text-decoration: none;
+}
+
+del{
+    text-decoration: none;
+}
+
+button{
+    display: block;
+    background-color: #dbd9d9;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+button:hover{
+  animation: hover 0.2s normal forwards ease-in-out;
+  -webkit-animation: hover 0.2s normal forwards ease-in-out;
+}
+
+img:hover{
+  animation: hover 0.2s normal forwards ease-in-out;
+  -webkit-animation: hover 0.2s normal forwards ease-in-out;
+}
+
+
+/************************/
+/****** CONTAINERS ******/
+/************************/
+
+.literature {
+  max-width: 35rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.output{
+    background-color: #f6f6f6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: none;
+}
+
+.options{
+    display: inline-block;
+    text-align: left;
+    margin: 1rem;
+}
+
+/************************/
+/******* DETAILS  *******/
+/************************/
+
+.details{
+  display: block;
+  border-bottom: 1px solid #BBB;
+}
+
+details{
+  background-color: #E9E9E9;
+}
+
+
+details[open]{
+  padding-bottom: 2.5rem;
+  background-color: #F0F0F0;
+}
+
+
+details > div {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+details > summary {
+  display: inline;
+  width: 80%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  outline:0;
+  font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+/***********************/
+/******* FOOTER  *******/
+/***********************/
+
+footer{
+  background-color: #e7e7e7;
+  padding-top: 2em;
+  padding-bottom: 2em; 
+  text-align:center;
+}
+
+footer > img {
+  display: inline;
+}
+
+footer > p {
+  text-align: center;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Animations %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+@keyframes hover{
+  0%   {
+    transform: 'scale(1)';
+   -webkit-transform: scale(1);
+  }
+  100%  {
+    transform: 'scale(1.03)';
+    -webkit-transform: scale(1.03);
+  }
+}
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<script src="../dist/mdd.min.js"></script>
+<script>
+  function init() {
+  document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+  }
+
+  function handleFileSelect(event) {
+    const reader = new FileReader()
+    reader.onload = handleFileLoad;
+    reader.readAsText(event.target.files[0])
+  }
+
+  function handleFileLoad(event) {
+    var a = document.getElementById("a");
+    var file = new Blob([mdd.transform(event.target.result, 'html')], {type: 'text/plain'});
+    a.href = URL.createObjectURL(file);
+    a.download = "document.html";
+  }
+
+</script>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDD Parser md > html</title>
+    <link rel="stylesheet" href="source/styles.css">
+  </head>
+
+  <body onload="init()">
+
+    <div class="literature">
+
+      <form action="#" onsubmit="return false">
+        <h1>MDD Parser</h1>
+        <h2>Transforma documentos mdd a html</h2>
+
+        <input id="fileInput" type="file" name="file" />
+        <pre id="fileContent"></pre>
+
+        <a href="" id="a">HTML</a>
+
+      </form>
+
+      <div class="output" id="outputdiv"></div>
+  </div>
+
+
+  <footer>
+    <p>MDD Project</p>
+    <a href="https://github.com/ProyectoCostaRica/mdd" target="_blank">
+      <img src="source/github.svg" alt="Kiwi standing on oval" width="50px">
+    </a>
+  </footer>
+
+</body>
+</html>
