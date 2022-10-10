@@ -1,16 +1,27 @@
 # Librería MDD. Parser md to html
 
-MDD es una librería que transcribe un documento MD a un documento HTML. El objetivo del proyecto es facilitar la producción de páginas web estáticas y que los escritores puedan enfocar su tiempo en la producción de sus textos. 
+MDD es una librería que transcribe un documento MD a un documento HTML. El objetivo del proyecto es facilitar la producción de páginas web estáticas y que los escritores puedan enfocar su tiempo en la producción de los textos. 
 
 ![Librería MDD](images/mdd.svg)
 
-MDD se basa en el modelo de la librería [Marked](https://github.com/markedjs/marked) creada por Christopher Jeffrey bajo la Licencia MIT.
+MDD se basa en la librería [Marked](https://github.com/markedjs/marked) creada por Christopher Jeffrey bajo la Licencia MIT.
 
-Acceda a la página [demo](/demo/mdd.html) para transformar un documento md a html.
+- Acceda a la página [demo](/demo/demo.html) para ver un ejemplo de un documento html resultante. 
+- Acceda al documento [sintaxis](syntax.md) para conocer la nomenclatura markdown aceptada por la librería. 
 
-## Comandos
 
-La librería está programada en Javascript haciendo uso de node.js para la modularizacion del código. Para ejecutar el código es necesario tener instalado node.js y usar un comando con el siguiente formato:
+## Uso 
+
+Para transformar un documento .md a un documento .html usar usar nuestro [parser en línea](/demo/mdd.html). 
+
+Para agregar la librería a tu página web usar nuestra librería javascript [mdd.min.js](/dist/mdd.min.js). Para llamar a la librería usa el siguiente código donde *markdown* es una variable string de la fuente a traducir. 
+
+```
+mdd.transform(markdown, 'html')
+
+```
+
+Para correr la librería en tu computadora es necesario tener instalado node.js y usar el siguiente comando:
 
 ```
 node mdd.js [nombre del documento .md] [parámetro de salida: html o latex]
@@ -22,11 +33,12 @@ Ejemplo:
 node mdd.js demo.md html
 ```
 
-Por otra parte, hacemos uso de browserify para transcribir la librería a un documento javascript que sea accesible desde una página web. 
+Por crear la librería javascript desde tu computadora se requiere browserify y ejecutar el siguiente comando. 
 
 ```
 browserify mdd.js --standalone mdd > dist/mdd.min.js
 ```
+
 
 ## Diseño
 
@@ -94,7 +106,3 @@ Parser devuelve:
 ```
 
 Al igual que Lexer, Parser es recusivo ya que analiza todos los niveles de los tokens y para cada nivel encadena la traducción html correspondiente. 
-
-## Sintaxis
-
-MDD usa la sintaxis markdown base pero también agrega otras funcionalidades como pies de página y audios. Toda la nomeclatura se encuentra en el documento [sintaxis](syntax.md).
