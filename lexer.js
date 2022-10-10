@@ -37,8 +37,8 @@ module.exports = class Lexer {
 
     while (src) {
 
-      // EXTRA_NOTE
-         if (token = this.tokenizer.extra_note(src)) {
+      // ARTICLE_NOTE
+         if (token = this.tokenizer.article_note(src)) {
           src = src.replace(token.raw,'');
           console.log("ENTRO A EXTRA NOTE")
           console.log(token)

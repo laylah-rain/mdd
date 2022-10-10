@@ -104,7 +104,7 @@ module.exports = class ParserHTML {
           continue;
         }
 
-        case 'extra_note': {
+        case 'article_note': {
           //console.log(token)
           const interior= ParserHTML.parse(token.tokens);
           txt='<div class="details">\n<details>\n  <summary>'+token.title+'</summary>\n<div>\n'+interior+'</div>\n</details>\n</div>\n\n';

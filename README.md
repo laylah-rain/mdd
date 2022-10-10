@@ -22,7 +22,6 @@ Para agregar la librería a tu página web usar nuestra librería javascript [md
 
 ```
 mdd.transform(markdown, 'html')
-
 ```
 
 ### Uso 3

@@ -19,7 +19,7 @@ const block = {
   image_no_caption:/^\s*!\[(.*?)]\((.*?)\)\((.*?)\)\s*/,
   image_cover:/^\s*!\[(.*?)]\s*/,
   audio:/^\s*!!\[(.*?)]\((.*?)\)\s*/,
-  extra_note: /\s*---+\s*NOTE\s*---+\s# (.*)\s*((.|\s)*?\n)---+\s*/,
+  article_note: /\s*```+\s*note\s# (.*)\s*((.|\s)*?\n)```\s*/,
   heading: /^\s*(#{1,6}) +([^\n]*)(?<!\s)\s*/,
   blockquote:/^\s*(>[^\n]*(?:\n|$))+\s*/,
   comment:/^\s*```((?:\s|.)*?)```\s*/,

@@ -118,11 +118,11 @@ module.exports = class Tokenizer {
   }
 
 
-  extra_note(src){
-    const cap = this.rules.extra_note.exec(src);
+  article_note(src){
+    const cap = this.rules.article_note.exec(src);
     if (cap) {
       return {
-        type: 'extra_note',
+        type: 'article_note',
         raw: cap[0],
         title: cap[1],
         text: cap[2]

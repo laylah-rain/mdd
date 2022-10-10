@@ -18,7 +18,7 @@ module.exports = class RenderHTML {
     var navbar=""
     var cover=""
     var body="";
-    var extra_notes="";
+    var article_notes="";
     var footer="";
 
     for (var x in tokens){
@@ -63,8 +63,8 @@ module.exports = class RenderHTML {
         continue;
       }
 
-      if (tokens[x].type=="extra_note"){
-        extra_notes=extra_notes+tokens[x].html;
+      if (tokens[x].type=="article_note"){
+        article_notes=article_notes+tokens[x].html;
         continue;
       }
 
@@ -75,7 +75,7 @@ module.exports = class RenderHTML {
     }
 
 
-    let out = '<!DOCTYPE html>\n<html '+language+'>\n\n<head>\n'+metadata +'<head>\n\n<body>\n'+navbar+cover+body+extra_notes+footer+ '\n</body>\n</html>';
+    let out = '<!DOCTYPE html>\n<html '+language+'>\n\n<head>\n'+metadata +'<head>\n\n<body>\n'+navbar+cover+body+article_notes+footer+ '\n</body>\n</html>';
     return out;
   }
 

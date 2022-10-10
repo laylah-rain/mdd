@@ -99,7 +99,8 @@ Este es algo que no se **va a ejecutar**
 [^1]: La nota.
 [^2]: La nota.
 
--------- NOTE ----------
+
+``` note
 # Abrir para leer nota extra sobre el audio y las pinturas
 
 El audio y las fotografías de pinturas presentes en esta página están bajo dominio público y se descargaron de las siguientes páginas web:
@@ -108,4 +109,4 @@ El audio y las fotografías de pinturas presentes en esta página están bajo do
 - [Autoretratro de Raphael](https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg)
 - [La escuela de Atenas](https://commons.wikimedia.org/wiki/File:Raphael_School_of_Athens.jpg)
 
---------------------------
+```
