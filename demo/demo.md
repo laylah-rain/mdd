@@ -1,22 +1,22 @@
 ---
 
 LANGUAGE: es
-CSS: https://minddo-education.github.io/mdd/demo/source/style.css
-FAVICON: https://minddo-education.github.io/mdd/demo/source/logo.png
+CSS: https://laylah-rain.github.io/mdd/demo/source/style.css
+FAVICON: https://laylah-rain.github.io/mdd/demo/source/logo.png
 
 FOOTER:
     - Ejemplo © 2022
-    - ![Título](https://minddo-education.github.io/mdd/demo/source/github.svg)(45px)(https://github.com/minddo-education/mdd)
-    - ![Título](https://minddo-education.github.io/mdd/demo/source/instagram.svg)(45px)(https://www.instagram.com)
-    - ![Título](https://minddo-education.github.io/mdd/demo/source/goodreads.svg)(45px)(https://www.goodreads.com)
+    - ![Título](https://laylah-rain.github.io/mdd/demo/source/github.svg)(45px)(https://github.com/minddo-education/mdd)
+    - ![Título](https://laylah-rain.github.io/mdd/demo/source/instagram.svg)(45px)(https://www.instagram.com)
+    - ![Título](https://laylah-rain.github.io/mdd/demo/source/goodreads.svg)(45px)(https://www.goodreads.com)
 
 
 NAVBAR:
-    - [Sintaxis](https://minddo-education.github.io/mdd/syntax.html)
-    - ![Título](https://minddo-education.github.io/mdd/demo/source/logo.png)(45px)(https://www.instagram.com){sametab}
-    - [Parser](https://minddo-education.github.io/mdd/demo/mdd.html)
+    - [Sintaxis](https://laylah-rain.github.io/mdd/syntax.html)
+    - ![Título](https://laylah-rain.github.io/mdd/demo/source/logo.png)(45px)(https://www.instagram.com){sametab}
+    - [Parser](https://laylah-rain.github.io/mdd/demo/mdd.html)
 
-COVER: https://minddo-education.github.io/mdd/demo/source/title.jpg
+COVER: https://laylah-rain.github.io/mdd/demo/source/title.jpg
 TITLE: Ejemplo del transcriptor MDD
 AUTHOR: Nombre Apellido
 YEAR: 2022
@@ -27,7 +27,7 @@ DESCRIPTION: Transcripción de documentos desde el formato md a html
 
 # Título de la nota
 
-!![Título de audio](https://minddo-education.github.io/mdd/demo/source/audio.m4a)
+!![Título de audio](https://laylah-rain.github.io/mdd/demo/source/audio.m4a)
 
 Acá debería de seguir solo 
 Un cambio de línea
@@ -36,7 +36,7 @@ Pero acá un cambio de parrafo. ¿Funciona?
 
 La librería MDD un transcriptor (*parser* en inglés) que traduce un documento markdown a un documento html. Esta herramienta facilita la producción de páginas web estáticas con el objetivo de que los escritores enfoquen su tiempo en el desarrollo del contenido de sus textos. 
 
-![Título de imagen](https://github.com/minddo-education/mdd/raw/main/images/mdd.svg)(100%)
+![Título de imagen](https://laylah-rain.github.io/mdd/images/mdd.svg)(100%)
 
 Si sos un escritor y querés crear una página web estática con MDD, seguí los siguientes pasos:
 
