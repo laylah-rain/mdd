@@ -171,6 +171,16 @@ module.exports = class Lexer {
       }
 
 
+      // HEADING_DESCRIPTION
+      if (token = this.tokenizer.heading_description(src)) {
+        src = src.substring(token.raw.length);
+        token.tokens_title = Lexer.lex(token.text)
+        token.tokens_description = Lexer.lex(token.description)
+        tokens.push(token);
+        continue;
+      }
+
+
       // HEADING
       if (token = this.tokenizer.heading(src)) {
         src = src.substring(token.raw.length);

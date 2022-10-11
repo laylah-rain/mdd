@@ -112,6 +112,17 @@ module.exports = class ParserHTML {
           continue;
         }
 
+        case 'heading_description': {
+          const title= ParserHTML.parse(token.tokens_title)
+          const description= ParserHTML.parse(token.tokens_description);
+          txt="  <div class='header'> <div class='title'>"+ title+ "</div> <div class='description'> " + description + "</div> </div>"
+          out += txt;
+          continue;
+        }
+
+
+    
+
         case 'heading': {
           const interior= ParserHTML.parse(token.tokens)
           txt='  <h' + token.depth + '>' + interior + '</h' + token.depth + '>\n';

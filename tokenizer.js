@@ -131,6 +131,19 @@ module.exports = class Tokenizer {
   }
 
 
+  heading_description(src) {
+    const cap = this.rules.heading_description.exec(src);
+    if (cap) {
+      return {
+        type: 'heading_description',
+        raw: cap[0],
+        depth: cap[1].length,
+        text: cap[2],
+        description: cap[3]
+      };
+    }
+  }
+
   heading(src) {
     const cap = this.rules.heading.exec(src);
     if (cap) {

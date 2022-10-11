@@ -20,6 +20,7 @@ const block = {
   image_cover:/^\s*!\[(.*?)]\s*/,
   audio:/^\s*!!\[(.*?)]\((.*?)\)\s*/,
   article_note: /\s*```+\s*note\s# (.*)\s*((.|\s)*?\n)```\s*/,
+  heading_description: /^\s*(#{1,6}) +([^\n]*)(?<!\s)\s\n([^\n]*)/,
   heading: /^\s*(#{1,6}) +([^\n]*)(?<!\s)\s*/,
   blockquote:/^\s*(>[^\n]*(?:\n|$))+\s*/,
   comment:/^\s*```((?:\s|.)*?)```\s*/,
