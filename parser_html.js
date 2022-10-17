@@ -136,6 +136,12 @@ module.exports = class ParserHTML {
           continue;
         }
 
+        case 'youtube_video': {
+          txt='<div class="youtube_video">\n<iframe width="560" height="315" source src="'+token.link+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n</div>';
+          out += txt;
+          continue;
+        }
+        
         case 'image_link_sametab': {
           txt='<a class="imageButton" href="'+token.external+'"><img src="'+token.link+'" alt="'+token.title+'"width="'+token.width+'"></img></a>\n';
           out += txt;

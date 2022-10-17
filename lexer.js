@@ -171,6 +171,14 @@ module.exports = class Lexer {
       }
 
 
+      // YOUTUBE VIDEO
+      if (token = this.tokenizer.youtube_video(src)) {
+        src = src.substring(token.raw.length);
+        tokens.push(token);
+        continue;
+      }
+
+
       // HEADING_DESCRIPTION
       if (token = this.tokenizer.heading_description(src)) {
         src = src.substring(token.raw.length);

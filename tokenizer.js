@@ -168,6 +168,18 @@ module.exports = class Tokenizer {
     }
   }
 
+  youtube_video(src) {
+    const cap = this.rules.youtube_video.exec(src);
+    if (cap) {
+      return {
+        type: 'youtube_video',
+        raw: cap[0],
+        title: cap[1],
+        link: cap[2]
+      };
+    }
+  }
+
   image_link_sametab(src) {
     const cap = this.rules.image_link_sametab.exec(src);
     if (cap) {
